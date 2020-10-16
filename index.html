@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+    <meta name='format-detection' content='telephone=no'>
+    <title>计协维修队</title>
+    <link rel="icon" href="icon.png">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        @media only screen and (min-width: 370px) {
+            html {
+                font-size: 12px !important;
+            }
+        }
+
+        @media only screen and (min-width: 641px) {
+            html {
+                font-size: 16px !important;
+            }
+        }
+
+
+
+        body {
+            padding-top: 5rem;
+            font-family: "Arial", sans-serif;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        div {
+            color: white;
+        }
+
+        .first_page {
+            padding-bottom: 5rem;
+        }
+
+        .title {
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .title_line2 {
+            padding-top: 0.6rem;
+        }
+
+        .page_section {
+            padding: 2rem;
+            align-self: flex-start;
+            flex: 1;
+        }
+
+        .box_row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .text_area {
+            /* margin: auto; */
+            padding: 1em;
+        }
+
+        .sub_title_1 {
+            padding: 0.5rem;
+            font-size: 3rem;
+        }
+
+        .psg {
+            text-indent: 2em;
+            font-size: 1rem;
+        }
+
+        .text {
+            font-size: 1rem;
+            padding-left: 4em;
+        }
+
+        .sub_title_2 {
+            text-indent: 0em;
+            padding: 0.7rem;
+            font-size: 1.3rem;
+        }
+
+        .timer {
+            text-align: center;
+            font-size: 2rem;
+            padding-top: 0.3rem;
+            padding-bottom: 0.3rem;
+        }
+
+        .logo_bg {
+            height: 30rem;
+            width: 30rem;
+        }
+
+        .logo_bg img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .map {
+            flex: auto;
+            height: 14rem;
+            float: right;
+        }
+
+        .map img {
+            vertical-align: middle;
+            height: 100%;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.5rem;
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first_page">
+        <div class="logo_bg">
+            <img src="untitled.png">
+        </div>
+        <div class="title">距离下一次理工服务日</div>
+        <div class="timer ">2020年10月23日&nbsp;&nbsp;&nbsp;&nbsp;星期五</div>
+        <div class="title title_line2">还有</div>
+        <div class="timer">
+            <b id="d"></b> 天 <b id="h"></b> 小时 <b id="m"></b> 分钟 <b id="s"></b> 秒
+        </div>
+    </div>
+    <div class="page_section">
+        <div class="sub_title_1">
+            详细信息
+        </div>
+        <div class="text_area">
+            <div class="box_row">
+                <div>
+                    <div class="sub_title_2">
+                        时间
+                    </div>
+                    <div class="text">
+                        2020年10月23日 9:00 - 17:00
+                    </div>
+                    <div class="sub_title_2">
+                        地点
+                    </div>
+                    <div class="text">
+                        露天广场
+                    </div>
+                </div>
+                <div class="map">
+                    <img src="map.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page_section">
+        <div class="sub_title_1">
+            Q&A
+        </div>
+        <div class="text_area">
+            <div class="psg">
+                <div class="sub_title_2">
+                    什么是“理工服务日”？
+                </div>
+                <div>
+                    “理工服务日”是计算机协会维修队定期定点举办的，面向理工学子的电脑维修维护活动。活动当日，我们有专人在特定地点受理问题。维修维护内容同上。使用“NIT电脑维修”小程序可以了解更多近期服务日具体信息。
+                </div>
+                <div class="sub_title_2">
+                    电脑维修是免费的吗？可以处理哪些问题？
+                </div>
+                <div>
+                    计算机协会维修队深刻贯彻志愿者精神，免费义务帮助理工学子。所有维修都是免费的，在需要提供耗材的项目上会收取极少的耗材费用。
+                    维修维护内容涵盖软件和硬件，包括但不限于笔记本清灰，更换硅脂，加装硬盘或者内存，重装系统，清理磁盘，安装常用软件。另外，我们还提供电脑及配件选购指导。
+                </div>
+                <div class="sub_title_2">
+                    什么是“NIT电脑维修”小程序？怎么使用？
+                </div>
+                <div>
+                    “NIT电脑维修”是浙大宁波理工计算机协会维修队维护的用于电脑维修咨询的小程序。面向全体理工学生，旨在帮助同学们解决电脑使用以及维护方面的问题。
+                    您可以在小程序提交您的相关问题，填写联系方式以及具体问题描述。计算机协会维修队随后会与您联系确认，派出专员处理问题。
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=Tc6eCa8pwX20PiSlAwyrOTlzlMWUMFFg&jump_from=webapi"><img border="0" src="group.png" alt="LP work" title="LP work"></a>
+    </div>
+    <div class="footer">
+        Supported by Computer Association, Repir Team.&nbsp;&nbsp;All rights reserved.
+    </div>
+    <script>
+        function timer() {
+            var start = new Date('2020/10/23 10:00');
+            var t = start - new Date();
+            var h = ~~(t / 1000 / 60 / 60 % 24);
+            if (h < 10) {
+                h = "0" + h;
+            }
+            var m = ~~(t / 1000 / 60 % 60);
+            if (m < 10) {
+                m = "0" + m;
+            }
+            var s = ~~(t / 1000 % 60);
+            if (s < 10) {
+                s = "0" + s;
+            }
+            document.getElementById('d').innerHTML = ~~(t / 1000 / 60 / 60 / 24);
+            document.getElementById('h').innerHTML = h;
+            document.getElementById('m').innerHTML = m;
+            document.getElementById('s').innerHTML = s;
+        }
+        timer();
+        setInterval(timer, 1000);
+    </script>
+</body>
+
+</html>
