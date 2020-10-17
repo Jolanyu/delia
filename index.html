@@ -8,7 +8,8 @@
     <meta name='apple-mobile-web-app-status-bar-style' content='black'>
     <meta name='format-detection' content='telephone=no'>
     <title>计协维修队</title>
-    <link rel="icon" href="https://636f-consult-kumtd-1302576921.tcb.qcloud.la/webpage/icon.png?sign=a0be0e9c1a1b4fa9b20a598d4af723a8&t=1602859553">
+    <link rel="icon"
+        href="https://636f-consult-kumtd-1302576921.tcb.qcloud.la/webpage/icon.png?sign=a0be0e9c1a1b4fa9b20a598d4af723a8&t=1602859553">
     <style>
         * {
             margin: 0px;
@@ -58,9 +59,9 @@
         }
 
         .page_section {
-            padding: 2rem;
-            align-self: flex-start;
-            flex: 1;
+            padding-top:4rem;
+            height: auto;
+            width: 90%;
         }
 
         .box_row {
@@ -70,8 +71,7 @@
         }
 
         .text_area {
-            /* margin: auto; */
-            padding: 1em;
+            margin: 1rem;
         }
 
         .sub_title_1 {
@@ -86,13 +86,15 @@
 
         .text {
             font-size: 1rem;
-            padding-left: 4em;
+            padding-left: 4rem;
+            padding-right: 8rem;
+
         }
 
         .sub_title_2 {
             text-indent: 0em;
-            padding: 0.7rem;
-            font-size: 1.3rem;
+            padding: 1rem;
+            font-size: 1.5rem;
         }
 
         .timer {
@@ -113,9 +115,12 @@
         }
 
         .map {
-            flex: auto;
+            justify-content: space-between;
             height: 14rem;
-            float: right;
+            padding-top: 3rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
+
         }
 
         .map img {
@@ -123,7 +128,17 @@
             height: 100%;
         }
 
+        .qq_group {
+            height: 2rem;
+        }
+
+        .qq_group img {
+            vertical-align: middle;
+            height: 100%;
+        }
+
         .footer {
+            padding-top: 3rem;
             text-align: center;
             font-size: 0.5rem;
             color: grey;
@@ -134,7 +149,8 @@
 <body>
     <div class="first_page">
         <div class="logo_bg">
-            <img src="https://636f-consult-kumtd-1302576921.tcb.qcloud.la/webpage/untitled.png?sign=1cf39a26c301fe13d3be76ae603ba3f0&t=1602859396">
+            <img
+                src="https://636f-consult-kumtd-1302576921.tcb.qcloud.la/webpage/untitled.png?sign=1cf39a26c301fe13d3be76ae603ba3f0&t=1602859396">
         </div>
         <div class="title">距离下一次理工服务日</div>
         <div class="timer ">2020年10月23日&nbsp;&nbsp;&nbsp;&nbsp;星期五</div>
@@ -160,11 +176,12 @@
                         地点
                     </div>
                     <div class="text">
-                        露天广场
+                        图书馆后的露天广场
                     </div>
                 </div>
                 <div class="map">
-                    <img src="https://636f-consult-kumtd-1302576921.tcb.qcloud.la/webpage/map.png?sign=7158346317077d7a78417adf54fecda6&t=1602859488">
+                    <img
+                        src="https://636f-consult-kumtd-1302576921.tcb.qcloud.la/webpage/map.png?sign=7158346317077d7a78417adf54fecda6&t=1602859488">
                 </div>
             </div>
         </div>
@@ -179,55 +196,58 @@
                     什么是“理工服务日”？
                 </div>
                 <div>
-                    “理工服务日”是计算机协会维修队定期定点举办的，面向理工学子的电脑维修维护活动。活动当日，我们有专人在特定地点受理问题。维修维护内容同上。使用“NIT电脑维修”小程序可以了解更多近期服务日具体信息。
-                </div>
-                <div class="sub_title_2">
-                    电脑维修是免费的吗？可以处理哪些问题？
-                </div>
-                <div>
-                    计算机协会维修队深刻贯彻志愿者精神，免费义务帮助理工学子。所有维修都是免费的，在需要提供耗材的项目上会收取极少的耗材费用。
-                    维修维护内容涵盖软件和硬件，包括但不限于笔记本清灰，更换硅脂，加装硬盘或者内存，重装系统，清理磁盘，安装常用软件。另外，我们还提供电脑及配件选购指导。
-                </div>
-                <div class="sub_title_2">
+                    “理工服务日”是计算机协会维修队定期举办的，面向理工学子的电脑维修维护活动。活动当日，我们有专人在特定地点受理问题。
+                    <div class="sub_title_2">
+                        电脑维修是免费的吗？可以处理哪些问题？
+                    </div>
+                    <div>
+                        计算机协会维修队深刻贯彻志愿者精神，免费帮助理工学子。所有维修都是免费的，在需要提供耗材的项目上会收取极少的耗材费用。
+                        维修维护内容涵盖软件和硬件，包括但不限于笔记本清灰，更换硅脂，加装硬盘或者内存，重装系统，清理磁盘，安装常用软件。另外，我们还提供电脑及配件选购指导。
+                    </div>
+                    <!-- <div class="sub_title_2">
                     什么是“NIT电脑维修”小程序？怎么使用？
                 </div>
                 <div>
                     “NIT电脑维修”是浙大宁波理工计算机协会维修队维护的用于电脑维修咨询的小程序。面向全体理工学生，旨在帮助同学们解决电脑使用以及维护方面的问题。
                     您可以在小程序提交您的相关问题，填写联系方式以及具体问题描述。计算机协会维修队随后会与您联系确认，派出专员处理问题。
+                </div> -->
                 </div>
             </div>
         </div>
-    </div>
-    <div>
-        <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=-Lg_LPZFqw2Pu1QKSO9A1bikSunRPCnJ&jump_from=webapi"><img border="0" src="https://636f-consult-kumtd-1302576921.tcb.qcloud.la/webpage/group.png?sign=477aa248e89c108ca8d8dfd8e907c8d0&t=1602859525" alt="计协维修队交流群" title="计协维修队交流群"></a>
-    </div>
-    <div class="footer">
-        Supported by Computer Association, Repir Team.&nbsp;&nbsp;All rights reserved.
-    </div>
-    <script>
-        function timer() {
-            var start = new Date('2020/10/23 10:00');
-            var t = start - new Date();
-            var h = ~~(t / 1000 / 60 / 60 % 24);
-            if (h < 10) {
-                h = "0" + h;
+        <div class="footer">
+            <div class="qq_group">
+                <a target="_blank"
+                    href="https://qm.qq.com/cgi-bin/qm/qr?k=-Lg_LPZFqw2Pu1QKSO9A1bikSunRPCnJ&jump_from=webapi"><img
+                        border="0"
+                        src="https://636f-consult-kumtd-1302576921.tcb.qcloud.la/webpage/group_highres.png?sign=e0a2bd23e2b97327fd2dc3555f04d28d&t=1602861790"
+                        alt="计协维修队交流群" title="计协维修队交流群"></a>
+            </div>
+            Supported by Computer Association, Repir Team.&nbsp;&nbsp;All rights reserved.
+        </div>
+        <script>
+            function timer() {
+                var start = new Date('2020/10/23 9:00');
+                var t = start - new Date();
+                var h = ~~(t / 1000 / 60 / 60 % 24);
+                if (h < 10) {
+                    h = "0" + h;
+                }
+                var m = ~~(t / 1000 / 60 % 60);
+                if (m < 10) {
+                    m = "0" + m;
+                }
+                var s = ~~(t / 1000 % 60);
+                if (s < 10) {
+                    s = "0" + s;
+                }
+                document.getElementById('d').innerHTML = ~~(t / 1000 / 60 / 60 / 24);
+                document.getElementById('h').innerHTML = h;
+                document.getElementById('m').innerHTML = m;
+                document.getElementById('s').innerHTML = s;
             }
-            var m = ~~(t / 1000 / 60 % 60);
-            if (m < 10) {
-                m = "0" + m;
-            }
-            var s = ~~(t / 1000 % 60);
-            if (s < 10) {
-                s = "0" + s;
-            }
-            document.getElementById('d').innerHTML = ~~(t / 1000 / 60 / 60 / 24);
-            document.getElementById('h').innerHTML = h;
-            document.getElementById('m').innerHTML = m;
-            document.getElementById('s').innerHTML = s;
-        }
-        timer();
-        setInterval(timer, 1000);
-    </script>
+            timer();
+            setInterval(timer, 1000);
+        </script>
 </body>
 
 </html>
