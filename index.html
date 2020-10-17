@@ -59,7 +59,7 @@
         }
 
         .page_section {
-            padding-top:4rem;
+            padding-top: 4rem;
             height: auto;
             width: 90%;
         }
@@ -83,17 +83,21 @@
             text-indent: 2em;
             font-size: 1rem;
         }
-
+        .ans_box{
+            padding: 1rem;
+        }
         .text {
             font-size: 1rem;
-            padding-left: 4rem;
+            padding-left: 2rem;
             padding-right: 8rem;
 
         }
 
         .sub_title_2 {
             text-indent: 0em;
-            padding: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-right: 1rem;
             font-size: 1.5rem;
         }
 
@@ -116,10 +120,10 @@
 
         .map {
             justify-content: space-between;
-            height: 14rem;
-            padding-top: 3rem;
-            padding-left: 4rem;
-            padding-right: 4rem;
+            height: 17rem;
+            padding-top: 2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
 
         }
 
@@ -195,59 +199,60 @@
                 <div class="sub_title_2">
                     什么是“理工服务日”？
                 </div>
-                <div>
+                <div class="ans_box">
                     “理工服务日”是计算机协会维修队定期举办的，面向理工学子的电脑维修维护活动。活动当日，我们有专人在特定地点受理问题。
-                    <div class="sub_title_2">
-                        电脑维修是免费的吗？可以处理哪些问题？
-                    </div>
-                    <div>
-                        计算机协会维修队深刻贯彻志愿者精神，免费帮助理工学子。所有维修都是免费的，在需要提供耗材的项目上会收取极少的耗材费用。
-                        维修维护内容涵盖软件和硬件，包括但不限于笔记本清灰，更换硅脂，加装硬盘或者内存，重装系统，清理磁盘，安装常用软件。另外，我们还提供电脑及配件选购指导。
-                    </div>
-                    <!-- <div class="sub_title_2">
+                </div>
+                <div class="sub_title_2">
+                    电脑维修是免费的吗？可以处理哪些问题？
+                </div>
+                <div class="ans_box">
+                    计算机协会维修队深刻贯彻志愿者精神，免费帮助理工学子。所有维修都是免费的，在需要提供耗材的项目上会收取极少的耗材费用。
+                    维修维护内容涵盖软件和硬件，包括但不限于笔记本清灰，更换硅脂，加装硬盘或者内存，重装系统，清理磁盘，安装常用软件。另外，我们还提供电脑及配件选购指导。
+                </div>
+                <!-- <div class="sub_title_2">
                     什么是“NIT电脑维修”小程序？怎么使用？
                 </div>
-                <div>
+                <div class="ans_box">
                     “NIT电脑维修”是浙大宁波理工计算机协会维修队维护的用于电脑维修咨询的小程序。面向全体理工学生，旨在帮助同学们解决电脑使用以及维护方面的问题。
                     您可以在小程序提交您的相关问题，填写联系方式以及具体问题描述。计算机协会维修队随后会与您联系确认，派出专员处理问题。
                 </div> -->
-                </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="qq_group">
-                <a target="_blank"
-                    href="https://qm.qq.com/cgi-bin/qm/qr?k=-Lg_LPZFqw2Pu1QKSO9A1bikSunRPCnJ&jump_from=webapi"><img
-                        border="0"
-                        src="https://636f-consult-kumtd-1302576921.tcb.qcloud.la/webpage/group_highres.png?sign=e0a2bd23e2b97327fd2dc3555f04d28d&t=1602861790"
-                        alt="计协维修队交流群" title="计协维修队交流群"></a>
-            </div>
-            Supported by Computer Association, Repir Team.&nbsp;&nbsp;All rights reserved.
+    </div>
+    <div class="footer">
+        <div class="qq_group">
+            <a target="_blank"
+                href="https://qm.qq.com/cgi-bin/qm/qr?k=-Lg_LPZFqw2Pu1QKSO9A1bikSunRPCnJ&jump_from=webapi"><img
+                    border="0"
+                    src="https://636f-consult-kumtd-1302576921.tcb.qcloud.la/webpage/group_highres.png?sign=e0a2bd23e2b97327fd2dc3555f04d28d&t=1602861790"
+                    alt="计协维修队交流群" title="计协维修队交流群"></a>
         </div>
-        <script>
-            function timer() {
-                var start = new Date('2020/10/23 9:00');
-                var t = start - new Date();
-                var h = ~~(t / 1000 / 60 / 60 % 24);
-                if (h < 10) {
-                    h = "0" + h;
-                }
-                var m = ~~(t / 1000 / 60 % 60);
-                if (m < 10) {
-                    m = "0" + m;
-                }
-                var s = ~~(t / 1000 % 60);
-                if (s < 10) {
-                    s = "0" + s;
-                }
-                document.getElementById('d').innerHTML = ~~(t / 1000 / 60 / 60 / 24);
-                document.getElementById('h').innerHTML = h;
-                document.getElementById('m').innerHTML = m;
-                document.getElementById('s').innerHTML = s;
+        Supported by Computer Association, Repir Team.&nbsp;&nbsp;All rights reserved.
+    </div>
+    <script>
+        function timer() {
+            var start = new Date('2020/10/23 9:00');
+            var t = start - new Date();
+            var h = ~~(t / 1000 / 60 / 60 % 24);
+            if (h < 10) {
+                h = "0" + h;
             }
-            timer();
-            setInterval(timer, 1000);
-        </script>
+            var m = ~~(t / 1000 / 60 % 60);
+            if (m < 10) {
+                m = "0" + m;
+            }
+            var s = ~~(t / 1000 % 60);
+            if (s < 10) {
+                s = "0" + s;
+            }
+            document.getElementById('d').innerHTML = ~~(t / 1000 / 60 / 60 / 24);
+            document.getElementById('h').innerHTML = h;
+            document.getElementById('m').innerHTML = m;
+            document.getElementById('s').innerHTML = s;
+        }
+        timer();
+        setInterval(timer, 1000);
+    </script>
 </body>
 
 </html>
